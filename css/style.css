@@ -6,17 +6,12 @@
 
 body {
     overflow-x: hidden;
-
-    /* font-family: 'Times New Roman', Times, serif;
-     */
-    font-family: "Lora";
 }
 
 header {
     background-image: url("images/person.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
 }
 
 nav {
@@ -38,46 +33,34 @@ nav {
     font-size: 20px;
     list-style-type: none;
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 20px;
-
-
+    margin: 0px 10px 0px 20px;
 }
 
 nav li a {
     color: aliceblue;
-    text-decoration: none;
 }
 
 nav li a i {
     color: rgb(255, 255, 255);
 }
-nav li a:hover{
-    color: blue;
-    transition-duration: 1s;
-}
-nav li i:hover{
-    color: blue;
-    transition-duration: 1s;
 
+nav li a:hover,
+i:hover {
+    color: rgb(22, 174, 188);
+    transition-duration: 1s;
 }
+
 .logo {
     margin: 10px 60px;
 }
 
 .logIn {
+
     margin-left: 240px;
-}
-.logIn:hover {
-    padding: 2px;
-    border-radius: 10px;
-    background-color: white;
-    color: #000000;
 }
 
 .contentOfHeader {
     color: rgb(255, 255, 255);
-    width: 100%;
     padding-top: 90px;
     text-align: center;
 }
@@ -92,51 +75,60 @@ nav li i:hover{
 }
 
 .pParagraph {
-    text-align: center;
     margin: 60px 30px;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .btn1 {
     padding: 15px;
+    margin-bottom: 40px;
     border-radius: 10px;
-    border: 0px solid white;
-    color: aliceblue;
-
+    border: none;
 }
 
 .btn1 a {
-    margin-top: -60px;
     color: black;
-    text-decoration: none;
 }
 
-/* Section one : Welcome */
+.btn1:hover {
+    box-shadow: 1px 10px 30px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* ***************Section one : Welcome **************/
 .sec1 {
     text-align: center;
-    margin-top: 80px;
+    margin: 80px 0px 40px 0px;
 }
 
 .sec1 h2 {
-    font-size: 30px;
+    margin-bottom: 40px;
+    font-size: 35px;
     color: rgb(54, 54, 54);
 }
 
 .sec1 p {
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    line-height: 27px;
     font-size: 20px;
     color: rgb(92, 93, 93);
 }
 
+hr {
+    width: 8%;
+    margin: 30px 0;
+}
+
+/* *****************Section 2******************* */
 .sec2 {
-    margin-top: 30px;
+    margin: 30px 0px;
     padding: 60px;
     background-color: rgb(244, 244, 244);
-    width: auto;
-    height: 500px;
 }
 
 .imgOfSec2 {
-    width: 50%;
+    width: 45%;
     text-align: center;
     float: left;
 }
@@ -147,8 +139,7 @@ nav li i:hover{
 
 .headerOfSec2 {
     font-size: 33px;
-    color: rgb(54, 54, 54);
-
+    margin-bottom: 20px;
 }
 
 .contentOfSec2 {
@@ -158,63 +149,59 @@ nav li i:hover{
     color: rgb(96, 96, 96);
 }
 
-
 /******************* section 3 of inages      ***********          */
 .sec3 {
+    text-align: center;
     background-color: rgb(255, 255, 255);
 
 }
+
 .headerOfSec3,
 .headerOfSec4 {
     padding-top: 60px;
-    text-align: center;
 }
 
 .headerOfSec3 h2,
 .headerOfSec4 h2 {
+    text-align: center;
     font-size: 35px;
-    color: rgb(16, 16, 16);
 }
 
-.headerOfSec3,
+.headerOfSec3 p,
 .headerOfSec4 p {
+    text-align: center;
     font-size: 20px;
     color: rgb(133, 133, 133);
-    margin-bottom: 50px;
-}
-
-.contentOfSec3 ul {
-    text-align: center;
+    margin: 10px 0px 20px 0px;
 }
 
 .contentOfSec3 ul li {
     margin: 15px;
     display: inline-block;
-    text-decoration: none;
-    list-style: none;
 }
 
 .imgsOfSec3 {
     padding: 40px;
 }
 
-.column{
+.column {
     float: left;
     width: 33.33%;
     padding: 5px;
 }
+
 .row::after {
     content: "";
     clear: both;
-    display: table  ;
-
+    display: table;
 }
+
 .contentOfSec3 a {
     color: rgb(87, 87, 87);
     font-size: 17px;
-    text-decoration: none;
 }
-.contentOfSec3 li a:hover{
+
+.contentOfSec3 li a:hover {
     color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 10px;
@@ -223,32 +210,59 @@ nav li i:hover{
     transition-duration: .5s;
 }
 
-.btn2 {
-    width: 150px;
+.btn2,
+.btn3 {
+    width: 130px;
     margin: 20px 45%;
     text-align: center;
     background-color: rgb(53, 57, 58);
     color: aliceblue;
-    padding: 25px;
-    border-radius: 10%;
+    padding: 15px;
+    border-radius: 10px;
     border: none;
 }
 
-.btn2 a {
-    text-decoration: none;
+.btn3 {
+    width: 170px;
+    margin-top: 50px;
+}
+
+.btn2 a,
+.btn3 a {
     color: aliceblue;
+}
+
+.btn2:hover,
+.btn3:hover {
+    box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    color: black;
+}
+
+.btn2:hover a,
+.btn3:hover a {
+    color: #000000;
 }
 
 /* Section 4 of divs of images */
 .sec4 {
     background-color: rgb(242, 242, 242);
-    height: 900px;
+}
+
+.contentOfSec4 {
+    margin-left: 50px;
+}
+
+.contentOfSec4 div a {
+    font-size: 20px;
+    color: rgb(62, 62, 62);
 }
 
 .contentOfSec4 div img {
     text-align: center;
     width: 100%;
 }
+
 .contentOfSec4 div {
     width: 30%;
     height: 500px;
@@ -257,122 +271,109 @@ nav li i:hover{
     display: inline-block;
 }
 
-.conten4OfImg h2 {
-    color: rgb(81, 81, 81);
-}
-
 .conten4OfImg .p1 {
+    margin: 15px 0px;
     color: rgb(180, 180, 180);
     font-size: 14px;
 }
 
 .conten4OfImg .p2 {
+    line-height: 24px;
     color: rgb(90, 89, 89);
     font-size: 17px;
+    margin: 20px 0px;
 }
 
-.sec4 a {
-    text-decoration: none;
-    color: rgb(62, 62, 62);
-    font-size: 15px;
-}
-
-.btn3 {
-    display: block;
-    padding: 15px;
-    margin: auto;
-    margin-bottom: 0px;
-    font-size: 14px;
-    background-color: rgb(53, 52, 52);
-    margin-top: 30px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-.btn3 a {
-    color: white;
+.contentOfSec4 div .moreRead {
+    color: rgb(65, 181, 181);
 }
 
 footer {
-    margin-top: 30px;
+    padding: 30px 0px;
+    text-align: center;
     background-color: rgb(28, 27, 27);
     background-repeat: no-repeat;
     background-size: auto;
-    height: 400px;
 }
-.social{
-    margin: 40px;
+
+footer a,
+footer p {
+    color: rgb(65, 181, 181);
+}
+
+.social {
+    margin: 30px;
     width: 50px;
 }
 
-/* *************** Page 1 Simple ********************* */
-.conten4OfPost {
-    background-color: rgb(39, 39, 39);
-    padding-top: 50px;
-    color: white;
-    text-align: center;
-    padding: 90px;
-}
-
-.headerOFPost nav {
-    background-color: rgb(255, 255, 255);
-    color: black;
-}
-
-.headerOFPost a,
-i {
-    text-decoration: none;
-
-    color: black;
-}
-
-.headerOFPost a {
-    color: rgb(60, 61, 62);
-}
-
-.headerOFPost .same {
-    color: rgb(255, 255, 255);
+.arrow {
+    font-size: 30px;
+    color: rgb(22, 174, 188);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 
 /* ********************* page login ********************* */
-#bodyOfLogin{
+#bodyOfLogin {
     background-color: aliceblue;
-    padding:60px;
+    padding: 60px;
     background-image: url(/images/bg-01.jpg);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .backgroundLogin {
     margin-top: 80px;
     background-color: rgb(255, 255, 255);
-    height:400px;
-        width: 300px;
+    height: 450px;
+    width: 300px;
     box-shadow: 1px 1px 6px 2px #888888;
     margin: auto;
     text-align: center;
+    border-radius: 15px;
 }
-    form{
-        padding-top: 70px;
+
+form {
+    padding-top: 70px;
 }
-img{
+
+img {
     margin-bottom: 20px;
 }
-input{
-    padding:10px 20px ;
-    margin:15px 0px ;
+
+input {
+    padding: 10px 20px;
+    margin: 15px 0px;
     border: none;
     background-color: #c4c4c4;
     border-radius: 20px;
 }
-button{
+
+.headerFooter {
+    color: rgb(82, 82, 185);
+    margin-bottom: 20px;
+}
+
+button {
     margin-top: 20px;
     padding: 10px 40px;
     border-radius: 19px;
     border: none;
-    box-shadow: 1px 1px 1px 2px ;
+    box-shadow: 1px 1px 1px 2px;
 }
-button:hover{
-    box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.5);
+
+.backgroundLogin button:hover {
+    box-shadow: 1px 10px 18px 0px rgba(0, 0, 0, 0.388);
+    background-color: #000000;
+    color: aliceblue;
+}
+
+h2 {
+    color: black;
+}
+
+a {
+    text-decoration: none;
 }
